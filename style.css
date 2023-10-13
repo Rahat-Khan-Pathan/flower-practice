@@ -230,7 +230,11 @@ body
     position: absolute;
     top: 0px;
     left: 10px;
-    animation: hang 5s ease-out 10s infinite ;
+    animation: hang 5s ease-out 0s infinite;
     max-width: 7%;
     height: auto;
 }
+/* body:hover .hang-man
+{
+    animation: hang 5s ease-out 0s infinite;
+} */
