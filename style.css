@@ -1,0 +1,236 @@
+body 
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+/* container  */
+.container 
+{
+    padding: 100px 200px 0 200px;
+    margin-bottom: 20px;
+}
+
+/* header part  */
+.header
+{
+    display: flex;
+    background-color: rgba(229, 84, 115, 0.1);
+}
+.header-left, .header-right 
+{
+    width: 50%;
+}
+.header-left-text1 
+{
+    color: #272727;
+    font-size: 4rem;
+    line-height: 1.3;
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+.header-left-text2 
+{
+    width: 95%;
+    color: rgb(106, 106, 106);
+    font-weight: 300;
+}
+.header-right img 
+{
+    width: 90%;
+}
+.header-right {
+    text-align: end;
+}
+.header-left-btn , .deal-btn, .sub-btn
+{
+    background-color: #E55473;
+    color: white;
+    padding: 17px 35px;
+    border: #E55473;
+    border-radius: 10px;
+    font-weight: 500;
+    margin-top: 20px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/* featured part  */
+.featured-text1, .instagram h1,.latest-deals h1 {
+    text-align: center;
+    font-size: 2.2rem;
+}
+.featured-text2 , .instagram p,.latest-deals p {
+    color: rgb(106, 106, 106);
+    font-weight: 300;
+    text-align: center;
+}
+.featured-container {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.flowers {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+    border-top-right-radius: 50% ;
+    border-top-left-radius: 50% ;
+    height: 400px;
+}
+.flower-text {
+    text-align: center;
+    text-decoration: underline;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+.flowers img {
+    width: 60%;
+    padding: 80px 40px 0 40px;
+}
+#flower-1 {
+    background-color: rgba(167, 33, 98, 0.1);
+}
+#flower-2 {
+    background-color: rgba(5, 151, 160, 0.1);
+}
+#flower-3 {
+    background-color: rgba(71, 125, 17, 0.1);
+}
+.support {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background-color: rgba(128, 128, 128, 0.1);
+    width: 90%;
+    margin: auto;
+    padding: 50px 50px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.support-element {
+    width: 100%;
+}
+.support-element img {
+    width: 70px;
+}
+.support-element p {
+    color: gray;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+/* deal part  */
+.deal {
+    display: flex;
+    background-color: rgba(229, 84, 115, 0.05);
+    padding: 80px 300px;
+    align-items: center;
+    gap: 40px;
+}
+.deal-left h1 {
+    font-size: 2.2rem;
+}
+.deal-left p {
+    font-weight: 400;
+    color: grey;
+}
+.deal-left, .deal-right {
+    width: 50%;
+    text-align: center;
+}
+.deal-right img {
+    width: 50%;
+}
+.deal-right {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+/* instagram part  */
+.instagram-img {
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    gap:20px;
+}
+.instagram-img img {
+    width: 100%;
+}
+
+/* latest deals part  */
+.latest-deals {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    text-align: center;
+    background: url(images/back.png);
+    padding: 70px 0 100px 0;
+    background-size: cover;
+    border-radius: 15px;
+}
+.latest-deals h1 {
+    margin-bottom: 10px;
+}
+.latest-deals p {
+    margin-top: 0;
+}
+#text {
+    width: 50%;
+    background-color: white;
+    color: gray;
+    font: 2rem;
+    padding: 20px 20px;
+    border-radius: 10px;
+    border: none;
+}
+#text:focus {
+    outline: 2px solid rgba(167, 33, 98, 0.5);
+}
+
+
+/* footer part  */
+.footer {
+    background-color: black;
+    text-align: center;
+    margin-bottom: 0;
+    padding-bottom: 100px;
+}
+.footer h1, .footer p {
+    color: white;
+    margin-bottom: 0;
+}
+.footer p {
+    font-weight: 300;
+    font-size: 0.8rem;
+    margin-bottom: 20px;
+}
+
+/* animation part  */
+@keyframes hang {
+    0% {
+        transform: rotate(0deg) translateX(0%);
+    }
+    33% {
+      transform: rotate(25deg) translateX(-15%);
+    }
+    66% {
+        transform: rotate(-25deg) translateX(15%);
+    }
+    100% {
+        transform: rotate(0deg) translateX(0%);
+    }
+    
+    
+}
+.hang-man
+{
+    position: absolute;
+    top: 0px;
+    left: 10px;
+    animation: hang 5s ease-out 10s infinite ;
+    max-width: 7%;
+    height: auto;
+}
